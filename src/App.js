@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { Box, Container, Heading, HStack, Button } from '@chakra-ui/react';
+import FundTransferForm from './components/FundTransferForm';
+import LiveStats from './components/LiveStats';
 
-function App() {
+const App = () => {
+  const [account, setAccount] = useState('');
+
+  const handleAccountChange = (newAccount) => {
+    setAccount(newAccount);
+  };
+
+ 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box bg="gray.50" color="gray.800" minH="100vh">
+      <Box bg="white" p={4} boxShadow="md">
+        <Container maxW="container.xl" display="flex" justifyContent="space-between" alignItems="center">
+          <Heading as="h1" size="lg" color="purple.600">
+            Fund Transfer dApp
+          </Heading>
+          
+        </Container>
+      </Box>
+      <Container maxW="full" centerContent py={8}>
+        <FundTransferForm onAccountChange={handleAccountChange} />
+        {account && <LiveStats account={account} /> }
+        
+      </Container>
+    </Box>
   );
-}
+};
 
 export default App;
