@@ -1,74 +1,93 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Fund Transfer dApp
 
-## Available Scripts
+Fund Transfer dApp is a decentralized application built using React and Web3.js that allows users to transfer Ethereum (ETH) from one wallet to another using MetaMask. The application connects to the MetaMask wallet and enables users to input a recipient wallet address and the amount of ETH to transfer.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Connect to MetaMask wallet
+- Input recipient wallet address
+- Input the amount of ETH to transfer
+- Display live ETH balance and various statistics such as price, 24h change, market cap, etc.
+- User-friendly interface with Chakra UI
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- Web3.js
+- MetaMask
+- Chakra UI
+- Axios
+- CryptoCompare API
+- Etherscan API
 
-### `npm test`
+## Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Before you begin, ensure you have met the following requirements:
 
-### `npm run build`
+- Node.js installed
+- MetaMask extension installed in your browser
+- A CryptoCompare API key
+- An Etherscan API key
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Follow these steps to set up and run the project locally.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. Clone the repository
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+git clone https://github.com/Shashank-mav/Fund-Transfer-Dapp.git
+cd fund-transfer-dapp
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2. Install dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3. Create a .env file
+Create a .env file in the root of the project and add your CryptoCompare API key and Etherscan API key:
 
-## Learn More
+REACT_APP_CRYPTOCOMPARE_API_KEY=your_cryptocompare_api_key
+REACT_APP_ETHERSCAN_API_KEY=your_etherscan_api_key
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 4. Start the development server
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm start
+The application will be available at http://localhost:3000.
 
-### Code Splitting
+### Usage
+Connect Wallet
+Click the "Connect Wallet" button to connect your MetaMask wallet.
+Grant permission to connect to your MetaMask account.
+Transfer ETH
+After connecting your wallet, input the recipient's wallet address and the amount of ETH to transfer.
+Click the "Transfer" button to initiate the transfer.
+Confirm the transaction in MetaMask.
+View Live Stats
+The application displays live statistics such as:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- ETH Balance
+- Price
+- 24h Change
+- Market Cap
+- Circulating Supply
+- 24h Trading Volume
+- 24h High
+- 24h Low
+- Total Supply
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Fork the repository
+Create a new branch (git checkout -b feature-branch)
+Make your changes
+Commit your changes (git commit -m 'Add some feature')
+Push to the branch (git push origin feature-branch)
+Create a Pull Request
 
-### Making a Progressive Web App
+### License
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contact
+If you have any questions or suggestions, feel free to reach out to me:
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# Fund-Transfer-Dapp
->>>>>>> 4b36a0c9fbc5e94707e846c5573218bdab5be402
+GitHub: Shashank-mav
